@@ -6,10 +6,10 @@
     <input id='url' placeholder='url to unblock (include https://)'>
     <button onclick='openurl()'>Open URL</button>
     <script>
-      var url = document.getElementById('url').value;
-      var string = '4164khjv26hjk26jvkh236vjk632gv63263vjgk632jk621o263vo2v6xbuo2xob2416xbi461y426ouc26u'.repeat(16380); //just some random string would work xD
-      var urltoopen = url + "#" + string;
       function openurl(){
+        var url = document.getElementById('url').value;
+        var string = '4164khjv26hjk26jvkh236vjk632gv63263vjgk632jk621o263vo2v6xbuo2xob2416xbi461y426ouc26u'.repeat(16380); // Just some random string would work xD
+        var urltoopen = url + "#" + string;
         window.open(urltoopen);
       }
     </script>
