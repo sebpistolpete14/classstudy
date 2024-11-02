@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
   <body>
     <h1>UNBLOCK3R</h1>
@@ -8,10 +8,15 @@
     <script>
       function openurl(){
         var url = document.getElementById('url').value;
-        var string = '4164khjv26hjk26jvkh236vjk632gv63263vjgk632jk621o263vo2v6xbuo2xob2416xbi461y426ouc26u'.repeat(16380); // Just some random string would work xD
-        var urltoopen = url + "#" + string;
-        alert(urltoopen);
-        window.open(urltoopen);
+        var string = 'knm43k2643643kj643k3lkj4621642lkj326lkn632632632lk632lk11632lkj6326326326621ckjl2xkj32c';
+        var urltoopen = url + "#" + string.repeat(16380);
+
+        // Ensure the URL is valid
+        if (url.startsWith('https://') || url.startsWith('http://')) {
+          window.open(urltoopen);
+        } else {
+          alert('Please enter a valid URL starting with http:// or https://');
+        }
       }
     </script>
   </body>
