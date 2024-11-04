@@ -17,24 +17,24 @@
       input {
         border-radius: 5px;
         height: 30px;
-        width: 300px;
+        width: 500px;
       }
     </style>
   </head>
   <body>
     <h1>UNBLOCK3R</h1>
     <p>Made by schoolexploitkid <br>Unblocks websites by making urls too long and overloading servers.</p>
-    <input id='url' placeholder='url to unblock (include https://)'>
+    <input id='url' placeholder='Search Google or Type a URL'>
     <button onclick='openurl()'>Open URL</button>
     <script>
       function openurl(){
         var url = document.getElementById('url').value;
         var string = 'knm43k2643643kj643k3lkj4621642lkj326lkn632632632lk632lk11632lkj6326326326621ckjl2xkj32c';
-        var urltoopen = url + "#" + string.repeat(16380);
+        var urltoopen = "";
         if (url.startsWith('https://') || url.startsWith('http://')) {
-          window.open(urltoopen);
+          window.open(urltoopen + url + "#" + string.repeat(16380));
         } else {
-          alert('Please enter a valid URL starting with http:// or https://');
+          window.open(urltoopen + "https://google.com/search?q=" + url + "#" + string.repeat(16380));
         }
       }
     </script>
