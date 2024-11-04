@@ -33,6 +33,9 @@
     <br>
     <br>
     <button onclick = "launchdns()">CauDNS (All Blockers, Made By dragon731012)</button>
+    <br>
+    <br>
+    <button onclick = "launchde()">Dextensify (All Blockers, Made By ading2210)</button>
     <script>
       function openurl(){
         var url = document.getElementById('url').value;
@@ -51,6 +54,11 @@
       }
       function launchdns(){
         fetch("https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/refs/heads/main/cauDNS.html")
+      .then((response) => response.text())
+      .then((text) => document.write(text));
+      }
+      function launchde(){
+        fetch("https://raw.githubusercontent.com/ading2210/dextensify/refs/heads/master/main.html")
       .then((response) => response.text())
       .then((text) => document.write(text));
       }
