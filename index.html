@@ -26,6 +26,10 @@
     <p>Made by schoolexploitkid <br>Unblocks websites by making urls too long and overloading servers.</p>
     <input id='url' placeholder='Search Google or Type a URL'>
     <button onclick='openurl()'>Open URL</button>
+    <br>
+    <br>
+    <p>If this does not work for you, try one of the options below.</p>
+    <button onclick = "launchis()">INSECURLY (For Securly)</button>
     <script>
       function openurl(){
         var url = document.getElementById('url').value;
@@ -36,6 +40,11 @@
         } else {
           window.open(urltoopen + "https://google.com/search?q=" + url + "#" + string.repeat(16380));
         }
+      }
+      function launchis(){
+        fetch("https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/refs/heads/main/bypassi.html")
+      .then((response) => response.text())
+      .then((text) => document.write(text));
       }
     </script>
   </body>
