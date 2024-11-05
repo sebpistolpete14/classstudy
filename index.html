@@ -39,6 +39,9 @@
     <br>
     <br>
     <button onclick = "launchhang()">ExtHang3r (All Blockers, Made By Blobby-Boi)</button>
+    <br>
+    <br>
+    <button onclick = "launchbuypass()">BuyPass (Some Blockers, Made By Bypassi, S-PScripts)</button>
     <script>
       function openurl(){
         var url = document.getElementById('url').value;
@@ -67,6 +70,11 @@
       }
       function launchhang(){
         fetch("https://raw.githubusercontent.com/Blobby-Boi/ExtHang3r/refs/heads/main/index.html")
+      .then((response) => response.text())
+      .then((text) => document.write(text));
+      }
+      function launchbuypass(){
+        fetch("https://the-buypass.netlify.app/")
       .then((response) => response.text())
       .then((text) => document.write(text));
       }
