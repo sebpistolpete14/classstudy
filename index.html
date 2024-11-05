@@ -36,6 +36,9 @@
     <br>
     <br>
     <button onclick = "launchde()">Dextensify (All Blockers, Made By ading2210)</button>
+    <br>
+    <br>
+    <button onclick = "launchhang()">ExtHang3r (All Blockers, Made By Blobby-Boi)</button>
     <script>
       function openurl(){
         var url = document.getElementById('url').value;
@@ -59,6 +62,11 @@
       }
       function launchde(){
         fetch("https://raw.githubusercontent.com/ading2210/dextensify/refs/heads/master/main.html")
+      .then((response) => response.text())
+      .then((text) => document.write(text));
+      }
+      function launchhang(){
+        fetch("https://raw.githubusercontent.com/Blobby-Boi/ExtHang3r/refs/heads/main/index.html")
       .then((response) => response.text())
       .then((text) => document.write(text));
       }
