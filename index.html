@@ -74,9 +74,7 @@
       .then((text) => document.write(text));
       }
       function launchbuypass(){
-        fetch("https://the-buypass.netlify.app/")
-      .then((response) => response.text())
-      .then((text) => document.write(text));
+        document.write("<iframe style='width:100%;height:100vh;border:none;margin:none;' src='https://the-buypass.netlify.app'></iframe>");
       }
     </script>
   </body>
