@@ -1,7 +1,4 @@
-// still kinda not finished, missing close and open buttons
-// Define global variables
-var uiopen = true;
-
+// UI 3.0 finally finished!!!
 // Create the UI container div
 var ui = document.createElement("div");
 ui.style.width = "500px";
@@ -20,7 +17,7 @@ ui.id = "ui";
 var h2 = document.createElement("h2");
 h2.style.fontFamily = "Helvetica, Arial, sans-serif";
 h2.style.color = "white";
-h2.innerHTML = "  UNBLOCK3R UI 2.0";
+h2.innerHTML = "  UNBLOCK3R UI 3.0";
 h2.style.fontSize = "30px";
 ui.appendChild(h2);
 
@@ -66,14 +63,36 @@ ui.appendChild(a);
 var br4 = document.createElement("br");
 ui.appendChild(br4);
 
+// Create another text break
+var br5 = document.createElement("br");
+ui.appendChild(br5);
+
 // Create a button to close the ui container
 var btn2 = document.createElement("button");
 btn2.textContent = "X";
-btn2.backgroundColor = "white";
+btn2.style.backgroundColor = "white";
+btn2.style.width = "25px";
+btn2.style.height = "25px";
+btn2.style.fontSize = "20px";
 ui.appendChild(btn2);
 btn2.onclick = function() {
   ui.style.display = "none";
 }
+
+// Create the open button
+var btn3 = document.createElement("button");
+btn3.textContent = "V";
+btn3.style.backgroundColor = "red";
+btn3.style.position = "fixed";
+btn3.style.top = "13px";
+btn3.style.left = "13px";
+btn3.style.width = "25px";
+btn3.style.height = "25px";
+btn3.style.fontSize = "20px";
+btn3.onclick = function() {
+  ui.style.display = "block";
+}
+document.body.appendChild(btn3);
 
 // Append the UI container to the body of the page
 document.body.appendChild(ui);
