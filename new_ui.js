@@ -26,8 +26,8 @@ btn.style.width = "100px";
 btn.style.height = "30px";
 
 // Create a link to the github
-var link = document.createElement("a");
-link.setAttribute("href", "https://github.com/schoolexploitkid/UNBLOCK3R");
+var a = document.createElement("a");
+a.setAttribute("href", "https://github.com/schoolexploitkid/UNBLOCK3R");
 a.textContent = "Go to the Github repository";
 a.style.backgroundColor = "white";
 a.style.fontSize = "18px";
