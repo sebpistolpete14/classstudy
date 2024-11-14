@@ -15,6 +15,7 @@ var h2 = document.createElement("h2");
 h2.style.fontFamily = "helvetica";
 h2.style.color = "white";
 h2.innerHTML = "UNBLOCK3R UI 2.0";
+h2.style.fontSize = "30px";
 ui.appendChild(h2);
 
 // Create the button inside the container
@@ -28,9 +29,10 @@ btn.style.height = "30px";
 // Create a link to the github
 var a = document.createElement("a");
 a.setAttribute("href", "https://github.com/schoolexploitkid/UNBLOCK3R");
-a.textContent = "Go to the Github repository";
+a.textContent = "Made by schoolexploitkid, Go to the Github repository!";
 a.style.backgroundColor = "white";
 a.style.fontSize = "18px";
+ui.appendChild(a);
 
 // Append the button to the UI container
 ui.appendChild(btn);
