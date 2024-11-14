@@ -17,7 +17,7 @@ ui.id = "ui";
 var h2 = document.createElement("h2");
 h2.style.fontFamily = "Helvetica, Arial, sans-serif";
 h2.style.color = "white";
-h2.innerHTML = "  UNBLOCK3R UI 3.0";
+h2.innerHTML = "  UNBLOCK3R UI 3.1";
 h2.style.fontSize = "30px";
 ui.appendChild(h2);
 
@@ -77,6 +77,20 @@ btn2.style.fontSize = "20px";
 ui.appendChild(btn2);
 btn2.onclick = function() {
   ui.style.display = "none";
+}
+
+// Create the remove button
+var btn4 = document.createElement("button");
+btn4.textContent = "REMOVE UNBLOCK3R";
+btn4.style.backgroundColor = "red";
+btn4.style.color = "yellow";
+btn4.style.width = "75px";
+btn4.style.height = "25px";
+btn4.style.fontSize = "15px";
+ui.appendChild(btn4);
+btn4.onclick = function() {
+  ui.style.display = "none";
+  btn3.style.display = "none";
 }
 
 // Create the open button
