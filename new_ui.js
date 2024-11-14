@@ -1,1 +1,14 @@
-
+var ui = document.createElement("div");
+ui.style.width = "400px";
+ui.style.height = "200px";
+ui.style.zIndex = "99999999999999999999999";
+ui.style.backgroundColor = "black";
+ui.style.borderWidth = "3px";
+ui.style.borderColor = "gray";
+ui.style.position = "fixed";
+ui.style.top = "0";
+ui.style.left = "0";
+var btn = document.createElement("button");
+btn.text = "Open Site!";
+btn.style.borderRadius = "5px";
+btn.style.backgroundColor = "white";
