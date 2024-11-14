@@ -1,4 +1,7 @@
 // still kinda not finished, missing close and open buttons
+// Define global variables
+var uiopen = true;
+
 // Create the UI container div
 var ui = document.createElement("div");
 ui.style.width = "500px";
@@ -8,9 +11,10 @@ ui.style.backgroundColor = "black";
 ui.style.borderWidth = "3px";
 ui.style.borderColor = "gray";
 ui.style.position = "fixed";
-ui.style.top = "10px";  // Fixed the missing "px"
-ui.style.left = "10px"; // Fixed the missing "px"
+ui.style.top = "10px"; 
+ui.style.left = "10px"; 
 ui.style.borderRadius = "5px";
+ui.id = "ui";
 
 // Create the heading inside the container
 var h2 = document.createElement("h2");
@@ -57,6 +61,19 @@ a.textContent = "Made by schoolexploitkid, Go to the Github repository!";
 a.style.color = "white";
 a.style.fontSize = "18px";
 ui.appendChild(a);
+
+// Create another text break
+var br4 = document.createElement("br");
+ui.appendChild(br4);
+
+// Create a button to close the ui container
+var btn2 = document.createElement("button");
+btn2.textContent = "X";
+btn2.backgroundColor = "white";
+ui.appendChild(btn2);
+btn2.onclick = function() {
+  ui.style.display = "none";
+}
 
 // Append the UI container to the body of the page
 document.body.appendChild(ui);
