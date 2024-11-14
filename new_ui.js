@@ -10,7 +10,7 @@ ui.style.position = "fixed";
 ui.style.top = "0";
 ui.style.left = "0";
 
-//Create the heading inside the container
+// Create the heading inside the container
 var h2 = document.createElement("h2");
 h2.style.fontFamily = "helvetica";
 h2.style.color = "white";
@@ -26,16 +26,20 @@ btn.style.backgroundColor = "white";
 btn.style.width = "100px";
 btn.style.height = "30px";
 
+// Append the button to the UI container
+ui.appendChild(btn);
+
+// Create a text break
+var br = document.createElement("br");
+ui.appendChild(br);
+
 // Create a link to the github
 var a = document.createElement("a");
 a.setAttribute("href", "https://github.com/schoolexploitkid/UNBLOCK3R");
 a.textContent = "Made by schoolexploitkid, Go to the Github repository!";
-a.style.backgroundColor = "white";
+a.style.color = "white";
 a.style.fontSize = "18px";
 ui.appendChild(a);
-
-// Append the button to the UI container
-ui.appendChild(btn);
 
 // Append the UI container to the body of the page
 document.body.appendChild(ui);
