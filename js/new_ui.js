@@ -68,5 +68,5 @@ function fetchURL(url) {
 
 // Set the button's click event to call fetchURL with the desired URL
 btn.onclick = function() {
-  fetchURL('https://raw.githubusercontent.com/schoolexploitkid/UNBLOCK3R/refs/heads/main/index.js');
+  fetchURL('https://raw.githubusercontent.com/schoolexploitkid/UNBLOCK3R/refs/heads/main/bookmarklets/index.js');
 };
