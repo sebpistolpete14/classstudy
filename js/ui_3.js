@@ -84,9 +84,10 @@ var btn4 = document.createElement("button");
 btn4.textContent = "REMOVE UNBLOCK3R";
 btn4.style.backgroundColor = "red";
 btn4.style.color = "yellow";
-btn4.style.width = "75px";
-btn4.style.height = "25px";
+btn4.style.width = "105px";
+btn4.style.height = "50px";
 btn4.style.fontSize = "15px";
+btn4.borderRadius = "5px";
 ui.appendChild(btn4);
 btn4.onclick = function() {
   ui.style.display = "none";
