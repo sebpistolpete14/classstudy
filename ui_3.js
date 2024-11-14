@@ -89,6 +89,7 @@ btn3.style.left = "13px";
 btn3.style.width = "25px";
 btn3.style.height = "25px";
 btn3.style.fontSize = "20px";
+btn3.style.zIndex = "9998";
 btn3.onclick = function() {
   ui.style.display = "block";
 }
