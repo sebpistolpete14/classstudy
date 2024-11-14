@@ -30,8 +30,12 @@ btn.style.height = "30px";
 ui.appendChild(btn);
 
 // Create a text break
-var br = document.createElement("br");
-ui.appendChild(br);
+var br1 = document.createElement("br");
+ui.appendChild(br1);
+
+// Create a text break
+var br2 = document.createElement("br");
+ui.appendChild(br2);
 
 // Create a link to the github
 var a = document.createElement("a");
